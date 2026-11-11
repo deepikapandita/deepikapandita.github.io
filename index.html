@@ -170,7 +170,7 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-
     <p class="meta">Agentic AI, RAG and the data pipelines underneath them. Master's in Data Science, Georgia State University.</p>
     <div class="actions">
       <a class="btn fill" href="#agents">See the projects</a>
-      <a class="btn" href="https://github.com/piku0806">GitHub</a>
+      <a class="btn" href="https://github.com/deepikapandita">GitHub</a>
       <a class="btn" href="https://www.linkedin.com/in/deepika-p-3ba47a8a/">LinkedIn</a>
     </div>
 
@@ -203,7 +203,7 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-
           <p class="pitch">Three specialist agents research an account, update the CRM and draft outreach. No agent can send an email by itself.</p>
           <p class="detail">Every tool call passes through one governance gateway with per-agent allowlists, risk tiers, prompt-injection screening and a human approval queue. The CRM sits behind an MCP server, so swapping the mock for Salesforce or Dynamics 365 means replacing one server. The demo data includes an injection attack hidden in a news item, and the run shows it caught, stripped and logged.</p>
           <ul class="tags"><li>Multi-agent</li><li>MCP</li><li>Microsoft Foundry</li><li>FastAPI</li><li>SQLite</li><li>Python</li></ul>
-          <a class="repo" href="https://github.com/piku0806/sales-ops-agents">View the code on GitHub</a>
+          <a class="repo" href="https://github.com/deepikapandita/sales-ops-agents">View the code on GitHub</a>
         </div>
         <div class="evals">
           <h4 class="label">Eval results</h4>
@@ -224,7 +224,7 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-
           <p class="pitch">A corrective RAG agent that answers employee questions from company policy. It cites every answer and abstains when the documents are silent.</p>
           <p class="detail">A LangGraph loop retrieves, grades relevance, rewrites the query once, generates, then checks that every citation points to retrieved text. Vendor-supplied content is treated as untrusted and scrubbed of instructions aimed at AI systems. Traced and evaluated with MLflow 3, with safety scorers that must stay at 100% in CI.</p>
           <ul class="tags"><li>LangGraph</li><li>RAG</li><li>BM25</li><li>MLflow 3</li><li>Databricks Model Serving</li><li>Azure OpenAI</li></ul>
-          <a class="repo" href="https://github.com/piku0806/policy-rag-agent">View the code on GitHub</a>
+          <a class="repo" href="https://github.com/deepikapandita/policy-rag-agent">View the code on GitHub</a>
         </div>
         <div class="evals">
           <h4 class="label">Eval results</h4>
@@ -246,7 +246,7 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-
           <p class="pitch">Plain-English questions over pharma commercial data, answered without the model ever writing SQL.</p>
           <p class="detail">The agent turns a question into a structured query over a semantic layer of 6 metrics and 9 dimensions defined in YAML. A deterministic compiler builds the SQL, and a sqlglot guard allows only a single SELECT on allowlisted tables. Undefined terms such as profit get a refusal instead of an invented number. Compiled SQL transpiles to Snowflake, Databricks or BigQuery.</p>
           <ul class="tags"><li>Semantic layer</li><li>dbt</li><li>DuckDB</li><li>sqlglot</li><li>Pydantic</li><li>MLflow</li></ul>
-          <a class="repo" href="https://github.com/piku0806/commercial-analytics-agent">View the code on GitHub</a>
+          <a class="repo" href="https://github.com/deepikapandita/commercial-analytics-agent">View the code on GitHub</a>
         </div>
         <div class="evals">
           <h4 class="label">Eval results</h4>
@@ -267,7 +267,7 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-
           <p class="pitch">An operations agent on top of a dbt medallion pipeline. It triages late, stuck and damaged shipments against the ops playbook.</p>
           <p class="detail">The pipeline has 8 dbt models and 15 data tests, and runs on DuckDB locally or Databricks by switching the target. The agent gathers context with read-only tools and proposes actions from a fixed catalog. A policy layer prices each one and applies approval rules: expedites over $500 and messages to strategic accounts wait for a person. Ops leaders get a daily digest.</p>
           <ul class="tags"><li>dbt</li><li>Databricks</li><li>DuckDB</li><li>MLflow</li><li>Human-in-the-loop</li><li>Python</li></ul>
-          <a class="repo" href="https://github.com/piku0806/supply-chain-exception-agent">View the code on GitHub</a>
+          <a class="repo" href="https://github.com/deepikapandita/supply-chain-exception-agent">View the code on GitHub</a>
         </div>
         <div class="evals">
           <h4 class="label">Sample run</h4>
@@ -300,7 +300,7 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-
         <p class="cap">Weighted MAE on a time-based holdout, against 40.19 for a seasonal-naive baseline.</p>
         <p class="detail">Daily sales forecasts for about 3,600 grocery items across 7 warehouses, 1 to 14 days ahead. One LightGBM model with a Tweedie objective predicts each horizon directly, which avoids the error that builds up when forecasting day by day.</p>
         <ul class="tags"><li>LightGBM</li><li>Time series</li><li>Feature engineering</li><li>Kaggle</li></ul>
-        <a class="repo" href="https://github.com/piku0806/RohlikSalesForecasting">View the code on GitHub</a>
+        <a class="repo" href="https://github.com/deepikapandita/RohlikSalesForecasting">View the code on GitHub</a>
       </article>
       <article class="ml">
         <h3>Cloud Autoscale Agent</h3>
@@ -308,7 +308,7 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-
         <p class="cap">Macro F1 on synthetic VM telemetry across AWS, Azure and GCP.</p>
         <p class="detail">A Random Forest predicts whether a VM should scale up, scale down or hold. An agent then acts on confident predictions, and escalates to a human when confidence is under 75% or a scale-down looks risky for the SLA. Every decision is logged with a plain-English reason.</p>
         <ul class="tags"><li>scikit-learn</li><li>FinOps</li><li>Guardrails</li><li>Decision log</li></ul>
-        <a class="repo" href="https://github.com/piku0806/Cloud-Autoscale-Agent-Predictive-FinOps-with-Agentic-Remediation">View the code on GitHub</a>
+        <a class="repo" href="https://github.com/deepikapandita/Cloud-Autoscale-Agent-Predictive-FinOps-with-Agentic-Remediation">View the code on GitHub</a>
       </article>
     </div>
   </div>
@@ -324,27 +324,27 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-
       <li>
         <h3>Apparel Retail Pipeline</h3>
         <p>Airflow orchestrates batch loads into BigQuery, and dbt builds a dimensional model with incremental merges and data-quality flags.</p>
-        <a href="https://github.com/piku0806/Apparel-Retail-Data-Pipeline-Airflow-dbt-BigQuery">Code</a>
+        <a href="https://github.com/deepikapandita/Apparel-Retail-Data-Pipeline-Airflow-dbt-BigQuery">Code</a>
       </li>
       <li>
         <h3>CRM + ERP Medallion Warehouse</h3>
         <p>Bronze, silver and gold layers that merge two disconnected source systems into one star schema, built on Python and DuckDB.</p>
-        <a href="https://github.com/piku0806/CRM-ERP-Medallion-Data-Warehouse">Code</a>
+        <a href="https://github.com/deepikapandita/CRM-ERP-Medallion-Data-Warehouse">Code</a>
       </li>
       <li>
         <h3>Flights Lakehouse on Databricks</h3>
         <p>Airline bookings pipeline with Unity Catalog volumes, Auto Loader ingestion and Delta Lake MERGE upserts for the dimensions.</p>
-        <a href="https://github.com/piku0806/ETL-Pipeline-for-Flights-Data-using-Databricks-and-DBT">Code</a>
+        <a href="https://github.com/deepikapandita/ETL-Pipeline-for-Flights-Data-using-Databricks-and-DBT">Code</a>
       </li>
       <li>
         <h3>Databricks DLT Apparel Pipeline</h3>
         <p>Streaming ingestion with data-quality expectations and Slowly Changing Dimensions (Type 2) in a medallion architecture.</p>
-        <a href="https://github.com/piku0806/Databricks-pipeline-for-Apparel-Data">Code</a>
+        <a href="https://github.com/deepikapandita/Databricks-pipeline-for-Apparel-Data">Code</a>
       </li>
       <li>
         <h3>Document Summarizer</h3>
         <p>A Streamlit app that summarizes uploaded PDFs with LangChain, OpenAI embeddings and a Pinecone vector index.</p>
-        <a href="https://github.com/piku0806/Summarize-Documents-using-LangChain-and-Pinecone">Code</a>
+        <a href="https://github.com/deepikapandita/Summarize-Documents-using-LangChain-and-Pinecone">Code</a>
       </li>
     </ul>
   </div>
@@ -371,7 +371,7 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-
     <div class="actions">
       <a class="btn fill" href="mailto:deepikapandita2013@gmail.com">Email me</a>
       <a class="btn" href="https://www.linkedin.com/in/deepika-p-3ba47a8a/">LinkedIn</a>
-      <a class="btn" href="https://github.com/piku0806">GitHub</a>
+      <a class="btn" href="https://github.com/deepikapandita">GitHub</a>
     </div>
     <p class="foot">Deepika Pandita. All companies and data in these projects are fictional or synthetic.</p>
   </div>
