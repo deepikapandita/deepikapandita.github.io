@@ -41,10 +41,9 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-
 
 /* hero */
 .hero { padding-block: 2.25rem 3.25rem; border-top: 0; }
-.top { display: grid; grid-template-columns: minmax(0, 1fr) auto; grid-template-areas: "label nav" "name name"; column-gap: 1.5rem; align-items: baseline; }
-.top .label { grid-area: label; }
-.top h1 { grid-area: name; }
-.top nav { grid-area: nav; }
+.top { display: flex; flex-wrap: wrap; gap: 0.4rem 1.5rem; justify-content: space-between; align-items: baseline; }
+.top h1 { order: 3; flex-basis: 100%; }
+.top nav { margin-left: auto; justify-content: flex-end; }
 .top .mark { font-family: var(--display); font-size: 1.15rem; }
 .top nav { display: flex; flex-wrap: wrap; gap: 0.25rem 1.4rem; }
 .top nav a { text-decoration: none; color: var(--muted); font-size: 0.92rem; }
@@ -146,8 +145,8 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-
   .rows li { grid-template-columns: minmax(0, 1fr); }
   .project .body, .evals, .ml { padding: 1.25rem; }
   #flow { height: 150px; }
-  .top { grid-template-columns: minmax(0, 1fr); grid-template-areas: "label" "name" "nav"; }
-  .top nav { margin-top: 0.75rem; }
+  .top nav { gap: 0.25rem 1rem; }
+  .top nav a { font-size: 0.86rem; }
 }
 </style>
 </head>
